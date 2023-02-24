@@ -8,21 +8,40 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import BlogPage from './pages/BlogPage';
-import ContactPage from './pages/ContactPage';
-
+import UserDashboard from './pages/UserDashboard';
+import Admin from './pages/Admin';
+import Dashboard from './pages/Dashboard';
+import Management from './pages/Management';
+import Controllers from './pages/Controllers';
+import Report from './pages/Report';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
   },
   {
-    path: "/Blog",
-    element: <BlogPage />,
+    path: "/Dashboard",
+    element: <Dashboard />,
   },
   {
-    path: "/Contact",
-    element: <ContactPage />,
+    path: "/UserDashboard",
+    element: <UserDashboard />,
+  },
+  {
+    path: "/Admin",
+    element: <Admin />,
+  },
+  {
+    path: "/Management",
+    element: <Management />,
+  },
+  {
+    path: "/Controllers",
+    element: <Controllers />,
+  },
+  {
+    path: "/Report",
+    element: <Report />,
   },
 ]);
 

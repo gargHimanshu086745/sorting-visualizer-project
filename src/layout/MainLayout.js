@@ -1,13 +1,22 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 
-function MainLayout({children}) {
+function MainLayout({ children }) {
   return (
-    <div>
+    <div className='Mainlayout'>
 
       <Navbar></Navbar>
-      <div>{children}</div>
-      <div>Here is SideBar</div>
+      <div className='sidebar-admin'>
+
+        <div className='sidebar-children-admin'>{children}</div>
+        <div>
+          <div>AdminLayout</div>
+          <div>AdminLayout</div>
+          <div>AdminLayout</div>
+          <div>AdminLayout</div>
+        </div>
+
+      </div>
     </div>
   )
 }

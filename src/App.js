@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import './App.css'
 import "./styles.css";
+import './layout/MainLayout.css'
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayoutContent from "./layout/MainLayoutContent";
 import database from "./idPassword";
